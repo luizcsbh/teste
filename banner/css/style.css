@@ -1,0 +1,87 @@
+@import
+
+url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    line-height: 1.5;
+}
+
+header{
+    overflow: auto;
+    position:fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: auto;   
+}
+
+h1{
+    color: #4eb305;
+    font-size: 1.5em;
+    float: left;
+    margin-left:20px;
+    margin-right:50px;
+}
+
+h2{
+    text-align: center;
+    font-weight: normal;
+    padding: 20px;
+    
+}
+
+section, footer{
+    padding:50px 0 20px 0;
+    text-align: justify;
+}
+
+textarea, input {
+    text-indent: 10px;
+    border: 1px solid #3a9ac4;
+    font-size: 16px;
+    margin: 5px 0px 5px 0px;
+    min-height: 40px;
+    outline-color: #4baad3;
+    padding: 5px;
+}
+
+
+section#Como img#html5{
+    float: left;
+    opacity: 0;
+    transform: translate(-200px);
+}
+
+footer{
+    color: white;
+    background-color: black;
+}
+
+.inner{
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+.centro{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entrada{
+    animation: 5s linear 1s infinite running entradaAnim;
+}
+
+@keyframes entradaAnim{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+        transform: translate(40px);
+    }
+}
